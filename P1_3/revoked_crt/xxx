@@ -1,0 +1,3 @@
+openssl genrsa -out basic.key 2048
+openssl req -new -key basic.key -out basic.csr -config basic.cnf
+

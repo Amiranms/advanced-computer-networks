@@ -1,0 +1,1 @@
+R	250105000251Z	241007000432Z	0A351453440C90AC36E59C89BFB86F6F395ADFC3	unknown	/C=RU/ST=Moscow/L=Moscow/O=mstoyanau/OU=mstoyanau P1_2/CN=mstoyanau CRL Revoked/emailAddress=mstoian.au@phystech.edu

@@ -1,0 +1,4 @@
+R	250105000251Z	241007000432Z	0A351453440C90AC36E59C89BFB86F6F395ADFC3	unknown	/C=RU/ST=Moscow/L=Moscow/O=mstoyanau/OU=mstoyanau P1_2/CN=mstoyanau CRL Revoked/emailAddress=mstoian.au@phystech.edu
+R	250118163041Z	241020164833Z	0A351453440C90AC36E59C89BFB86F6F395ADFC5	unknown	/C=RU/ST=Moscow/L=Moscow/O=mstoyanau/OU=mstoyanau P1_3/CN=mstoyanau OCSP Revoked/emailAddress=mstoian.au@phystech.edu
+V	250118165110Z		0A351453440C90AC36E59C89BFB86F6F395ADFC6	unknown	/C=RU/ST=Moscow/L=Moscow/O=mstoyanau/OU=mstoyanau P1_3/CN=mstoyan OCSP Valid/emailAddress=mstoyan.au@phystech.edu
+R	250120143825Z	241022143935Z	0A351453440C90AC36E59C89BFB86F6F395ADFC8	unknown	/C=RU/ST=Moscow/L=Moscow/O=mstoyanau/OU=mstoyanau P1_3/CN=mstoyanau OCSP Revoked/emailAddress=mstoian.au@phystech.edu

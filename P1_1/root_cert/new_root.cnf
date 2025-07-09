@@ -1,0 +1,26 @@
+
+[ req ]
+default_bits        = 4096
+default_md          = sha256
+distinguished_name  = req_distinguished_name
+x509_extensions     = v3_ca
+prompt              = no
+
+[ req_distinguished_name ]
+countryName			= RU
+countryName_min			= 2
+countryName_max			= 2
+stateOrProvinceName		= Moscow
+localityName			= Moscow
+0.organizationName		= mstoyanau
+organizationalUnitName		= mstoyanau P1_1
+commonName			= mstoyanau CA
+commonName_max			= 64
+emailAddress			= mstoian.au@phystech.edu
+emailAddress_max		= 64
+
+[ v3_ca ]
+basicConstraints    = critical, CA:TRUE
+keyUsage            = critical, digitalSignature, keyCertSign, cRLSign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always, issuer

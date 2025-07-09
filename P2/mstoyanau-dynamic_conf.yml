@@ -1,0 +1,27 @@
+http:
+  routers:
+    to-dvwa:
+      rule: "Host(`localhost`) && PathPrefix(`/`)"
+      middlewares:
+      - waf
+      service: dvwa
+
+  middlewares:
+    waf:
+      plugin:
+        coraza:
+          directives:
+            - SecRuleEngine On
+            - SecDebugLog /dev/stdout
+            - SecDebugLogLevel 9
+            - SecRequestBodyAccess On
+            - SecResponseBodyAccess On
+            - SecResponseBodyMimeType application/json
+
+            - SecRule QUERY_STRING "@rx (?i)(\%27|\'|\%22|\"|or\s+1\s*=\s*1|or\s+\d+\s*=\s*\d+)" "id:100003, phase:2, t:none, block, log, deny, status:405, msg:'Blocked SQL Injection attempt'"
+
+  services:
+    dvwa:
+      loadBalancer:
+        servers:
+        - url: http://dvwa

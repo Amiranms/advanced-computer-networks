@@ -1,0 +1,36 @@
+[ req ]
+#default_bits		= 2048
+#default_md		= sha256
+#default_keyfile 	= privkey.pem
+distinguished_name	= req_distinguished_name
+attributes		= req_attributes
+x509_extensions = req_extensions 
+
+[ req_distinguished_name ]
+countryName			= RU
+countryName_min			= 2
+countryName_max			= 2
+stateOrProvinceName		= Moscow
+localityName			= Moscow
+0.organizationName		= mstoyanau
+organizationalUnitName		= mstoyanau P1_1
+commonName			= mstoyanau Basic
+commonName_max			= 64
+emailAddress			= mstoian.au@phystech.edu
+emailAddress_max		= 64
+
+[ req_attributes ]
+challengePassword		= A challenge password
+challengePassword_min		= 4
+challengePassword_max		= 20
+
+[ req_extensions ] 
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature
+extendedKeyUsage = critical, serverAuth, clientAuth
+
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = basic.mstoyanau.ru
+DNS.2 = basic.mstoyanau.com

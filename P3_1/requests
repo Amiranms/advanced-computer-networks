@@ -1,0 +1,4 @@
+curl -v -x http://localhost:3128 http://ident.me
+curl -v -x http://localhost:3128 -H "User-Agent: mstoyanau" http://ident.me
+docker run -v .:/squid -p 3128:3128 -it yutony/squid:4.10 squid -f /squid/squid.conf -NYC
+curl -v -x http://localhost:3128 -H "User-Agent: mstoyanau" "http://httpbin.org/get?bio=mstoyanau"
